@@ -1,0 +1,50 @@
+#div-top{
+	padding:0px;
+	margin:0px;
+}
+#brand-menu2{
+	margin-top:15px;
+	font-size:20px;
+	color:red;
+}
+#phone{
+	text-align:center;
+}
+table, td, tr , th{
+    padding: 10px;
+    width: 25%;
+    margin-left: 10px;
+    border-collapse: collapse;
+}
+a, .font-footer{
+	color:black;
+    font-size:15px;
+}
+ul li a,.font-footer{
+    color: white;
+}
+#bg-footer1{
+	background-color:green;
+    color:white;
+    font: outline;
+}
+#bg-footer2{	
+    background-color: gray;
+    text-align:center;
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+}
+.row{
+	margin-top:10px;
+} 
+.ex img:hover{
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    transition: all 300ms ease-in-out;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}

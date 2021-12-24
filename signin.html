@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        #form-dn{
+            margin-left: 500px;
+            margin-top: 200px;
+            background-color: transparent;
+            width: 600px;
+            height: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1 style="text-align: center;"><b>Đăng nhập</b></h1>
+        <form action="banhang.html" id="form-dn">
+            <label><b>Tài khoản</b></label>
+            <input placeholder="User" style="height: 30px; width: 200px;" id="myText" name="Name" class="user" type="text" required="">
+            <br>
+            <br>
+            <label><b>Password</b></label>
+			<input placeholder="Password" style="height: 30px; width: 200px;" name="Password" class="pass" type="password" required="">
+            <br>
+            <br>
+            <button onclick="myFunction()" style="height: 30px; width: 100px; text-align: center;">Đăng nhập</button>
+            <p id="demo"></p>
+        </form>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("myText").value;
+            if(x==''){
+                alert("Vui lòng đăng nhập thông tin!");
+            }
+            else{
+                alert("Chúc mừng " + x +" .Bạn đã đăng nhập thành công!");
+            }
+        }
+    </script>
+    
+</body>
+</html>

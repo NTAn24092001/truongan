@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <marquee scrollamount="100" scrolldelay="300" style="width: 100%;">
+        <span style="color: red; font-size: 40px;">Đăng ký liền tay - Nhận ngay Iphone</span>
+        </marquee>
+    <form action="signin.html" style="text-align: center;">
+        <fieldset>
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <label style="margin-right: 40px;">Họ và tên </label>
+                        <input style="margin-left: 49px;" type="text" name="username" required/>
+                        <br />
+                    </div>
+                    <div>
+                        <label>Số điện thoại/Email </label>
+                        <input style="margin-left: 30px;" type="text" name="email" required/>
+                        <br />
+                    </div>
+                    <div>
+                        <label style="margin-left: -25px;" for="bday">Ngày tháng năm sinh </label>
+                        <input style="margin-left: 15px;" type="date" id="bday" name="bday">
+                        <span class="validity"></span><br />
+                    </div>
+                    <div>
+                        <label style="margin-right: 100px;">Giới tính: </label>
+                        <input type="radio" value="Nam" name="rad" />Nam
+                        <input type="radio" value="Nữ" name="rad" />Nữ
+                        <input type="radio" value="Khác" name="rad" checked="true"/>Khác
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <label>Tài khoản </label>
+			<input style="margin-left: 90px;" id="myText1" type="text" name="Name" required/>
+            <br />
+            <label>Mật khẩu </label>
+			<input style="margin-left: 90px;" id="myText2" type="password" name="password" placeholder="Enter Password..." required/>
+            <br />
+            <label>Xác nhận mật khẩu </label>
+			<input style="margin-left: 30px;" id="myText3" type="password" name="password" placeholder="Enter Password..." required/>
+            <br />
+        </fieldset>
+        <fieldset>
+            <button onclick="myFunction()">
+                <img src="image/add.png" width="20", height="20">Tạo tài khoản
+            </button>
+        </fieldset>
+    </form>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("myText1").value;
+            var x1=document.getElementById("myText2").value;
+            var x2=document.getElementById("myText3").value;
+            if (x==''){
+                alert("Vui lòng đăng nhập thông tin");
+            }
+            if (x1==''){
+                alert("Vì lý do bảo mật, vui lòng nhập mật khẩu");
+            }
+            else{
+                if (x1 == x2){
+                alert("Đăng ký thành công, vui lòng đăng nhập để tiếp tục");
+                }
+                if (x1 != x2){
+                    alert("Mật khẩu xác nhận phải giống mật khẩu đã nhập");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
